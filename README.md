@@ -170,7 +170,7 @@ model.generation_config = GenerationConfig.from_pretrained(model_name)
 model.generation_config.pad_token_id = model.generation_config.eos_token_id
 
 messages = [
-    {"role": "user", "content": "what is the integral of x^2 from 0 to 2?"}
+    {"role": "user", "content": "what is the integral of x^2 from 0 to 2?\nPlease reason step by step, and put your final answer within \boxed{}."}
 ]
 input_tensor = tokenizer.apply_chat_template(messages, add_generation_prompt=True, return_tensors="pt")
 outputs = model.generate(input_tensor.to(model.device), max_new_tokens=100)
