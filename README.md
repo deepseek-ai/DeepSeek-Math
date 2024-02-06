@@ -191,6 +191,13 @@ Assistant:
 
 **Note:** By default (`add_special_tokens=True`), our tokenizer automatically adds a `bos_token` (`<｜begin▁of▁sentence｜>`) before the input text. Additionally, since the system prompt is not compatible with this version of our models, we DO NOT RECOMMEND including the system prompt in your input.
 
+❗❗❗ **Please use chain-of-thought prompt to test DeepSeekMath-Instruct and DeepSeekMath-RL:**
+
+- English questions: **{question}\nPlease reason step by step, and put your final answer within \\boxed{}.**
+
+- Chinese questions: **{question}\n请通过逐步推理来解答问题，并把最终答案放置于\\boxed{}中。**
+
+
 ## 6. License
 This code repository is licensed under the MIT License. The use of DeepSeekMath models is subject to the Model License. DeepSeekMath supports commercial use.
 
