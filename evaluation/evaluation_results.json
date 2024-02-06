@@ -1,0 +1,204 @@
+{
+    "DeepSeekMath-Base": {
+        "OCWCourses": {
+            "cot": {
+                "accuracy": 0.15441176470588236,
+                "n_samples": 272
+            },
+            "tool": {
+                "n_samples": 0
+            }
+        },
+        "cmath-cot-test": {
+            "cot": {
+                "accuracy": 0.7167577413479053,
+                "n_samples": 1098
+            },
+            "tool": {
+                "n_samples": 0
+            }
+        },
+        "miniF2F-Isabelle-test": {
+            "cot": {
+                "accuracy": 1.0,
+                "n_samples": 244
+            },
+            "tool": {
+                "n_samples": 0
+            }
+        },
+        "gsm8k-cot-test": {
+            "cot": {
+                "accuracy": 0.6421531463229719,
+                "n_samples": 1319
+            },
+            "tool": {
+                "n_samples": 0
+            }
+        },
+        "MMLU-STEM-test": {
+            "cot": {
+                "accuracy": 0.5646123260437376,
+                "n_samples": 3018
+            },
+            "tool": {
+                "n_samples": 0
+            }
+        },
+        "agieval-gaokao-mathqa-cot-test": {
+            "cot": {
+                "accuracy": 0.35327635327635326,
+                "n_samples": 351
+            },
+            "tool": {
+                "n_samples": 0
+            }
+        },
+        "agieval-gaokao-mathcloze-cot-test": {
+            "cot": {
+                "accuracy": 0.2033898305084746,
+                "n_samples": 118
+            },
+            "tool": {
+                "n_samples": 0
+            }
+        },
+        "gsm8k-pal-test": {
+            "cot": {
+                "n_samples": 0
+            },
+            "tool": {
+                "accuracy": 0.66868840030326,
+                "n_samples": 1319
+            }
+        },
+        "math_sat": {
+            "cot": {
+                "accuracy": 0.84375,
+                "n_samples": 32
+            },
+            "tool": {
+                "n_samples": 0
+            }
+        },
+        "miniF2F-Isabelle-valid": {
+            "cot": {
+                "accuracy": 1.0,
+                "n_samples": 244
+            },
+            "tool": {
+                "n_samples": 0
+            }
+        },
+        "math-pal-test": {
+            "cot": {
+                "n_samples": 0
+            },
+            "tool": {
+                "accuracy": 0.3142,
+                "n_samples": 5000
+            }
+        },
+        "math-cot-test": {
+            "cot": {
+                "accuracy": 0.3618,
+                "n_samples": 5000
+            },
+            "tool": {
+                "n_samples": 0
+            }
+        }
+    },
+    "DeepSeekMath-RL": {
+        "mgsm-zh": {
+            "cot": {
+                "accuracy": 0.796,
+                "n_samples": 250
+            },
+            "tool": {
+                "accuracy": 0.784,
+                "program_accuracy": 0.776,
+                "n_samples": 250
+            }
+        },
+        "cmath": {
+            "cot": {
+                "accuracy": 0.8879781420765027,
+                "n_samples": 1098
+            },
+            "tool": {
+                "accuracy": 0.8761384335154827,
+                "program_accuracy": 0.8570127504553734,
+                "n_samples": 1098
+            }
+        },
+        "math-test": {
+            "cot": {
+                "accuracy": 0.517,
+                "n_samples": 5000
+            },
+            "tool": {
+                "accuracy": 0.5878,
+                "program_accuracy": 0.509,
+                "n_samples": 5000
+            }
+        },
+        "gsm8k-test": {
+            "cot": {
+                "accuracy": 0.8824867323730099,
+                "n_samples": 1319
+            },
+            "tool": {
+                "accuracy": 0.866565579984837,
+                "program_accuracy": 0.868081880212282,
+                "n_samples": 1319
+            }
+        }
+    },
+    "DeepSeekMath-Instruct": {
+        "gsm8k-test": {
+            "cot": {
+                "accuracy": 0.8286580742987112,
+                "n_samples": 1319
+            },
+            "tool": {
+                "accuracy": 0.8369977255496588,
+                "program_accuracy": 0.8332069749810462,
+                "n_samples": 1319
+            }
+        },
+        "math-test": {
+            "cot": {
+                "accuracy": 0.4682,
+                "n_samples": 5000
+            },
+            "tool": {
+                "accuracy": 0.575,
+                "program_accuracy": 0.4664,
+                "n_samples": 5000
+            }
+        },
+        "cmath": {
+            "cot": {
+                "accuracy": 0.8460837887067395,
+                "n_samples": 1098
+            },
+            "tool": {
+                "accuracy": 0.843351548269581,
+                "program_accuracy": 0.8214936247723132,
+                "n_samples": 1098
+            }
+        },
+        "mgsm-zh": {
+            "cot": {
+                "accuracy": 0.732,
+                "n_samples": 250
+            },
+            "tool": {
+                "accuracy": 0.72,
+                "program_accuracy": 0.716,
+                "n_samples": 250
+            }
+        }
+    }
+}

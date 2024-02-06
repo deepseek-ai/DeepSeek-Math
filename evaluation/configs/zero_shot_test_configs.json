@@ -1,0 +1,34 @@
+{
+    "gsm8k-test": {
+        "test_path": "datasets/gsm8k/test.jsonl",
+        "language": "en",
+        "tasks": ["tool", "cot"],
+        "process_fn": "process_gsm8k_test",
+        "answer_extraction_fn": "extract_last_single_answer",
+        "eval_fn": "eval_last_single_answer"
+    },
+    "math-test": {
+        "test_path": "datasets/math/test.jsonl",
+        "language": "en",
+        "tasks": ["tool", "cot"],
+        "process_fn": "process_math_test",
+        "answer_extraction_fn": "extract_math_answer",
+        "eval_fn": "eval_math"
+    },
+    "mgsm-zh": {
+        "test_path": "datasets/mgsm_zh/mgsm_zh.jsonl",
+        "language": "zh",
+        "tasks": ["tool", "cot"],
+        "process_fn": "process_mgsm_zh",
+        "answer_extraction_fn": "extract_last_single_answer",
+        "eval_fn": "eval_last_single_answer"
+    },
+    "cmath": {
+        "test_path": "datasets/cmath/test.jsonl",
+        "language": "zh",
+        "tasks": ["tool", "cot"],
+        "process_fn": "process_cmath",
+        "answer_extraction_fn": "extract_last_single_answer",
+        "eval_fn": "eval_last_single_answer"
+    }
+}

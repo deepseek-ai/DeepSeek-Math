@@ -1,0 +1,110 @@
+{
+    "gsm8k-cot-test": {
+        "test_path": "datasets/gsm8k/test.jsonl",
+        "language": "en",
+        "tasks": ["cot"],
+        "process_fn": "process_gsm8k_test",
+        "answer_extraction_fn": "extract_gsm_few_shot_cot_answer",
+        "eval_fn": "eval_last_single_answer",
+        "few_shot_prompt": "CoTGSMPrompt"
+    },
+    "gsm8k-pal-test": {
+        "test_path": "datasets/gsm8k/test.jsonl",
+        "language": "en",
+        "tasks": ["pal"],
+        "process_fn": "process_gsm8k_test",
+        "answer_extraction_fn": "placeholder",
+        "eval_fn": "eval_last_single_answer",
+        "few_shot_prompt": "PALGSMPrompt"
+    },
+    "math-cot-test": {
+        "test_path": "datasets/math/test.jsonl",
+        "language": "en",
+        "tasks": ["cot"],
+        "process_fn": "process_math_test",
+        "answer_extraction_fn": "extract_math_few_shot_cot_answer",
+        "eval_fn": "eval_math",
+        "few_shot_prompt": "MinervaMathPrompt"
+    },
+    "math-pal-test": {
+        "test_path": "datasets/math/test.jsonl",
+        "language": "en",
+        "tasks": ["pal"],
+        "process_fn": "process_math_test",
+        "answer_extraction_fn": "placeholder",
+        "eval_fn": "eval_math",
+        "few_shot_prompt": "PALMathPrompt"
+    },
+    "math_sat": {
+        "test_path": "datasets/sat/test.jsonl",
+        "language": "en",
+        "tasks": ["cot"],
+        "process_fn": "process_math_sat",
+        "answer_extraction_fn": "extract_sat_few_shot_answer",
+        "eval_fn": "eval_math_sat",
+        "few_shot_prompt": "CoTSATPrompt"
+    },
+    "OCWCourses": {
+        "test_path": "datasets/ocw/test.jsonl",
+        "language": "en",
+        "tasks": ["cot"],
+        "process_fn": "process_ocwcourses",
+        "answer_extraction_fn": "extract_ocwcourses_few_shot_answer",
+        "eval_fn": "eval_ocwcourses",
+        "few_shot_prompt": "OCWCoursesPrompt"
+    },
+    "MMLU-STEM-test": {
+        "test_path": "datasets/mmlu_stem/test.jsonl",
+        "language": "en",
+        "tasks": ["cot"],
+        "process_fn": "process_mmlu_stem",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "MMLUSTEMPrompt"
+    },
+    "miniF2F-Isabelle-valid": {
+        "test_path": "datasets/minif2f/validation.jsonl",
+        "language": "en",
+        "tasks": ["cot"],
+        "process_fn": "process_minif2f_isabelle",
+        "answer_extraction_fn": "extract_minif2f_isabelle",
+        "eval_fn": "eval_minif2f_isabelle",
+        "few_shot_prompt": "MiniF2FIsabellePrompt"
+    },
+    "miniF2F-Isabelle-test": {
+        "test_path": "datasets/minif2f/test.jsonl",
+        "language": "en",
+        "tasks": ["cot"],
+        "process_fn": "process_minif2f_isabelle",
+        "answer_extraction_fn": "extract_minif2f_isabelle",
+        "eval_fn": "eval_minif2f_isabelle",
+        "few_shot_prompt": "MiniF2FIsabellePrompt"
+    },
+    "cmath-cot-test": {
+        "test_path": "datasets/cmath/test.jsonl",
+        "language": "zh",
+        "tasks": ["cot"],
+        "process_fn": "process_cmath",
+        "answer_extraction_fn": "extract_cmath_few_shot_test",
+        "eval_fn": "eval_last_single_answer",
+        "few_shot_prompt": "CoTCMATHPrompt"
+    },
+    "agieval-gaokao-mathcloze-cot-test": {
+        "test_path": "datasets/agieval/gaokao-mathcloze.jsonl",
+        "language": "zh",
+        "tasks": ["cot"],
+        "process_fn": "process_agieval_gaokao_math_cloze",
+        "answer_extraction_fn": "extract_agieval_gaokao_mathcloze_few_shot_cot_test",
+        "eval_fn": "eval_agieval_gaokao_math_cloze",
+        "few_shot_prompt": "CoTGaoKaoMathClozePrompt"
+    },
+    "agieval-gaokao-mathqa-cot-test": {
+        "test_path": "datasets/agieval/gaokao-mathqa.jsonl",
+        "language": "zh",
+        "tasks": ["cot"],
+        "process_fn": "process_agieval_gaokao_mathqa_few_shot_cot_test",
+        "answer_extraction_fn": "extract_agieval_gaokao_mathqa_few_shot_cot_test",
+        "eval_fn": "eval_agieval_gaokao_mathqa",
+        "few_shot_prompt": "CoTGaoKaoMathQAPrompt"
+    }
+}
