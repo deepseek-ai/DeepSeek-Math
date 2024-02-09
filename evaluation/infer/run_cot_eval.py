@@ -1,5 +1,10 @@
 import argparse
 import os
+import sys
+import_path = os.path.abspath(__file__)
+for _ in range(2):
+    import_path = os.path.dirname(import_path)
+sys.path.append(import_path)
 
 from tqdm import tqdm
 import json

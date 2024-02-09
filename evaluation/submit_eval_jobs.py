@@ -46,21 +46,21 @@ def main():
     args = parser.parse_args()
 
     conf = base_conf # TODO: your conf here
-    for rank in range(args.n_gpus):
-        cmd = "python run_subset_parallel.py"
-        for key, val in conf.items():
-            if key == 'expname':
-                continue
-            if isinstance(val, str):
-                cmd += f" --{key} {val}"
-            elif val:
-                cmd += f" --{key}"
-        cmd += f" --test-conf {conf['test-conf']}"
-        cmd += f" --n-repeats {args.n_repeats}"
-        cmd += f" --temperature {args.temperature}"
-        cmd += f" --rank {rank} &"
-        print(cmd, flush=True)
-        os.system(cmd)
+    cmd = "python run_subset_parallel.py"
+    for key, val in conf.items():
+        if key == 'expname':
+            continue
+        if isinstance(val, str):
+            cmd += f" --{key} {val}"
+        elif val:
+            cmd += f" --{key}"
+    cmd += f" --test-conf {conf['test-conf']}"
+    cmd += f" --n-repeats {args.n_repeats}"
+    cmd += f" --temperature {args.temperature}"
+    cmd += f" --ngpus {args.n_gpus}"
+    cmd += f" --rank {0} &"
+    print(cmd, flush=True)
+    os.system(cmd)
 
 if __name__ == '__main__':
     main()
