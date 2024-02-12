@@ -18,7 +18,7 @@
   <a href="https://huggingface.co/deepseek-ai" target="_blank">
     <img alt="Hugging Face" src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-DeepSeek%20AI-ffc107?color=ffc107&logoColor=white" />
   </a>
-   <a href="https://replicate.com/cjwbw/deepseek-math-7b-instruct" target="_parent"><img src="https://replicate.com/cjwbw/deepseek-math-7b-instruct/badge" alt="Replicate"/></a> 
+   <a href="https://replicate.com/cjwbw/deepseek-math-7b-base" target="_parent"><img src="https://replicate.com/cjwbw/deepseek-math-7b-base/badge" alt="Replicate"/></a> 
 </div>
 
 <div align="center">

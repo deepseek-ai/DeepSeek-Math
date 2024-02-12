@@ -12,4 +12,4 @@ build:
     - hf_transfer
 
 # predict.py defines how predictions are run on your model
-predict: "predict.py:Predictor"
+predict: "replicate/predict.py:Predictor"
