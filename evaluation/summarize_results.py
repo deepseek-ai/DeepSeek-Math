@@ -87,16 +87,6 @@ def main():
                 os.makedirs(task_dirname, exist_ok=True)
                 metric_path = os.path.join(task_dirname, "metrics.json")
                 pred_path = os.path.join(task_dirname, "predictions.json")
-                if 'math6' in dataset.lower() and task == 'cot':
-                    data_to_score = []
-                    for pred in task2pred[task]:
-                        item = deepcopy(pred['metadata'])
-                        item['model_answer_turns_1'] = pred['turns'][0]['model_output']
-                        item['model_answer_turns_2'] = pred['turns'][1]['model_output']
-                        data_to_score.append(item)
-                    _metrics = math6_score(data_to_score)
-                    task2metric[task].update(_metrics)
-                    model2dataset2task2metric[model][dataset][task].update(_metrics)
                 json.dump(task2metric[task], open(metric_path, "w"), indent=4)
                 json.dump(task2pred[task], open(pred_path, "w"), indent=4)
                 if 'minif2f' in dataset.lower() and 'isabelle' in dataset.lower() and task2pred[task] and args.eval_atp:
